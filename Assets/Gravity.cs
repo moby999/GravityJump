@@ -29,13 +29,9 @@ public class Gravity : MonoBehaviour
 
         if (Vector3.Distance(thisPos, objPos) > planetRadius /*+ obj.GetComponent<MeshRenderer>().bounds.size.y*/)
         {
-            //Debug.Log(planetRadius + obj.GetComponent<MeshRenderer>().bounds.size.y + ":" + Vector3.Distance(thisPos, objPos));
-
             Vector3 offset = (transform.position - obj.transform.position).normalized;
             //obj.rigidbody.AddForce(offset / offset.sqrMagnitude * rigidbody.mass);
             obj.rigidbody.velocity += forceStrength * Time.deltaTime * offset;
-
-            //obj.transform.rotation = Quaternion.FromToRotation(Vector3.up, (objPos - thisPos).normalized);
         }
         else
         {
@@ -46,35 +42,10 @@ public class Gravity : MonoBehaviour
             {
                 //Debug.Log("Landed");
                 Move controller = obj.GetComponent<Move>();
-                controller.onSurface = this.gameObject;
-                //controller.onSurface = this.gameObject;
-
-                //obj.transform.rotation = Quaternion.FromToRotation(Vector3.up, (objPos - thisPos).normalized);
-
-                //sc.radius = planetRadius;
-                //obj.transform.parent = transform;
-
-                /*
-                //new stuff
-                ConfigurableJoint joint = obj.GetComponent<ConfigurableJoint>();
-                joint.xMotion = ConfigurableJointMotion.Locked;
-                joint.yMotion = ConfigurableJointMotion.Locked;
-                joint.zMotion = ConfigurableJointMotion.Locked;
-                Vector3 toCenter = -transform.localPosition;
-
-                // center position relative to object 
-                joint.connectedAnchor = this.transform.position ;
-                //joint.anchor = transform.InverseTransformDirection(toCenter);
-
-                // map velocity to sphere surface 
-                //rigidbody.velocity = Quaternion.LookRotation(toCenter) * Vector3.one; // *startVel; 
-                 */
-                
+                if (controller.onSurface == null)
+                    controller.onSurface = this.gameObject;
             }
-            //obj.rigidbody.velocity = Vector3.zero;
         }
-        //Debug.Log(obj.rigidbody.velocity);
-            
     }
 
     void OnTriggerEnter(Collider obj)
