@@ -10,3 +10,15 @@ C:\Users\Thais\Dropbox\Unity\GravityJump\Temp\bin\Debug\ICSharpCode.NRefactory.d
 C:\Users\Thais\Dropbox\Unity\GravityJump\obj\Debug\Assembly-CSharp.dll
 C:\Users\Thais\Dropbox\Unity\GravityJump\obj\Debug\Assembly-CSharp.pdb
 C:\Users\Thais\Dropbox\Unity\GravityJump\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+C:\Users\Thais\Documents\GitHub\GravityJump\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+C:\Users\Thais\Documents\GitHub\GravityJump\obj\Debug\Assembly-CSharp.dll
+C:\Users\Thais\Documents\GitHub\GravityJump\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\Thais\Documents\GitHub\GravityJump\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Thais\Documents\GitHub\GravityJump\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Thais\Documents\GitHub\GravityJump\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Thais\Documents\GitHub\GravityJump\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\Thais\Documents\GitHub\GravityJump\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Thais\Documents\GitHub\GravityJump\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Thais\Documents\GitHub\GravityJump\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Thais\Documents\GitHub\GravityJump\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Thais\Documents\GitHub\GravityJump\obj\Debug\Assembly-CSharp.pdb

@@ -21,7 +21,7 @@ public class MovingObject : MonoBehaviour
             Vector3 thisPos = this.transform.position;
             Vector3 planetPos = surface.transform.position;
             transform.rotation = Quaternion.FromToRotation(Vector3.up, (thisPos - planetPos).normalized);
-            rigidbody.AddForce(transform.forward.normalized * Time.deltaTime * flyForce, ForceMode.Force);
+            rigidbody.velocity = transform.forward.normalized * Time.deltaTime * flyForce;
             Debug.DrawRay(transform.position, transform.forward.normalized * Time.deltaTime * flyForce);
         }
     }
